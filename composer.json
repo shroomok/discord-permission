@@ -1,0 +1,38 @@
+{
+    "name": "shroomok/discord-permission",
+    "description": "Set roles and permissions based on member roles of your Discord server",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shroomok",
+            "email": "shroomok@gmail.com",
+            "homepage": "https://shroomok.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "spatie/laravel-permission": "^5.9",
+        "restcord/restcord": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0|^8.0",
+        "phpunit/phpunit": "^9.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Shroomok\\DiscordPermission\\": "src"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "v1",
+            "dev-master": "v1"
+        },
+        "laravel": {
+            "providers": [
+                "Shroomok\\DiscordPermission\\DiscordPermissionServiceProvider"
+            ]
+        }
+    }
+}

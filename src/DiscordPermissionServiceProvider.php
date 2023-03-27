@@ -28,7 +28,7 @@ class DiscordPermissionServiceProvider extends ServiceProvider
         });
 
         $this->app->singleton(CanCheckDiscordMemberRole::class, function(){
-            return new DiscordMembers($this->app->get(DiscordClient::class), config('discord_permission.guild_id'));
+            return new DiscordMembers($this->app->get(DiscordClient::class), (int) config('discord_permission.guild_id'));
         });
     }
 

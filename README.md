@@ -2,6 +2,12 @@
 
 This package automatically grants permissions to Laravel users based on their roles in Discord Guild (Server).
 
+## Requirements
+- PHP >= 8.1
+- Laravel >= 9.0
+- [spatie/laravel-permissions](https://github.com/spatie/laravel-permission) >= 5.9
+- [restcord/restcord](https://github.com/restcord/restcord)
+
 ## Installation
 
 ```shell

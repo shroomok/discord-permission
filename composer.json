@@ -25,10 +25,6 @@
         }
     },
     "extra": {
-        "branch-alias": {
-            "dev-main": "v1",
-            "dev-master": "v1"
-        },
         "laravel": {
             "providers": [
                 "Shroomok\\DiscordPermission\\DiscordPermissionServiceProvider"
